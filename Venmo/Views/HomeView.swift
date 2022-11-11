@@ -18,19 +18,24 @@ struct HomeView: View {
                     showingScanView = true
                 } label: {
                     Image(systemName: "magnifyingglass")
+                        .foregroundColor(Color.gray)
                     Text("People and Businesses")
+                        .foregroundColor(Color.gray)
+                    Spacer()
                 }
                 .padding()
                 .frame(width: 350)
                 .overlay(
                     RoundedRectangle(cornerRadius: 50)
-                        .stroke(.blue)
+                        .stroke(.gray)
                 )
+                .padding()
                 VStack{
                     TransferView(senderImage: "mr. wuff", sender: "Mr. Wuff", receiver: "Dook", message: "ur lame")
                     TransferView(senderImage: "dook", sender: "Dook Devil", receiver: "Refs", message: "will this help us beat UNC?")
-                    TransferView(senderImage: "deacon", sender: "Deamon Deacon", receiver: "Refs", message: "will this help us beat UNC?")
-                    TransferView(senderImage: "bama", sender: "Big Al", receiver: "Mike the Tiger", message: "groceries")
+                    TransferView(senderImage: "deacon", sender: "Deamon Deacon", receiver: "You", message: "you bring the popcorn")
+                    TransferView(senderImage: "kevin", sender: "Kevin G", receiver: "UNC Students", message: "sorry about the lead")
+                    TransferView(senderImage: "bama", sender: "Big Al", receiver: "Mike the Tiger", message: "gummy bears")
                     TransferView(senderImage: "hokie", sender: "Hokie", receiver: "Dook Devil", message: "game ticket")
                     TransferView(senderImage: "mj", sender: "Michael Jordan", receiver: "Roy Williams", message: "concessions")
                 }
@@ -47,6 +52,7 @@ struct TransferView: View{
     var sender: String
     var receiver: String
     var message: String
+    @State private var isLiked: Bool = false
     
     var body: some View{
         VStack{
@@ -69,8 +75,17 @@ struct TransferView: View{
                     }
                     .padding(1)
                     HStack{
-                        Image(systemName: "heart")
+                        Button(action: {
+                            self.isLiked.toggle()}) {
+                            Image(systemName: self.isLiked == true ? "heart.fill" : "heart")
+                                    .resizable()
+                                    .frame(width: 21, height: 20)
+                                    .foregroundColor(Color.black
+                                    )
+                            }
                         Image(systemName: "bubble.right")
+                            .frame(width: 30, height: 25)
+                            .foregroundColor(Color.black)
                         Spacer()
                     }
                 }
@@ -78,16 +93,6 @@ struct TransferView: View{
             }
             .padding(.bottom)
             Divider()
-        }
-    }
-}
-
-struct TransactionView: View{
-    
-    
-    var body: some View{
-        ZStack{
-            
         }
     }
 }

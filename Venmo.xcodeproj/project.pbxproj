@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D51E6E9291DE9B4006A90D9 /* PaymentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D51E6E8291DE9B4006A90D9 /* PaymentView.swift */; };
+		1D51E6EB291DEA35006A90D9 /* PayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D51E6EA291DEA35006A90D9 /* PayView.swift */; };
 		1D670A622918C0A900540A21 /* Crypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D670A612918C0A900540A21 /* Crypto.swift */; };
 		1D670A642918C0B500540A21 /* MeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D670A632918C0B500540A21 /* MeView.swift */; };
 		1D670A662918C0C900540A21 /* CardsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D670A652918C0C900540A21 /* CardsView.swift */; };
@@ -39,6 +41,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1D51E6E8291DE9B4006A90D9 /* PaymentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentView.swift; sourceTree = "<group>"; };
+		1D51E6EA291DEA35006A90D9 /* PayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayView.swift; sourceTree = "<group>"; };
 		1D670A612918C0A900540A21 /* Crypto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Crypto.swift; sourceTree = "<group>"; };
 		1D670A632918C0B500540A21 /* MeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeView.swift; sourceTree = "<group>"; };
 		1D670A652918C0C900540A21 /* CardsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsView.swift; sourceTree = "<group>"; };
@@ -89,6 +93,8 @@
 				1D670A652918C0C900540A21 /* CardsView.swift */,
 				1D670A672918C13D00540A21 /* HomeView.swift */,
 				1D8EEB6C291C9030009E6DB2 /* ButtonViews.swift */,
+				1D51E6E8291DE9B4006A90D9 /* PaymentView.swift */,
+				1D51E6EA291DEA35006A90D9 /* PayView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -281,10 +287,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				1D8EEB6D291C9030009E6DB2 /* ButtonViews.swift in Sources */,
+				1D51E6E9291DE9B4006A90D9 /* PaymentView.swift in Sources */,
 				1D670A642918C0B500540A21 /* MeView.swift in Sources */,
 				1D670A662918C0C900540A21 /* CardsView.swift in Sources */,
 				1D670A622918C0A900540A21 /* Crypto.swift in Sources */,
 				1D670A682918C13D00540A21 /* HomeView.swift in Sources */,
+				1D51E6EB291DEA35006A90D9 /* PayView.swift in Sources */,
 				1DC168B9291609C600C50E51 /* ContentView.swift in Sources */,
 				1DC168B7291609C600C50E51 /* VenmoApp.swift in Sources */,
 			);

@@ -41,31 +41,6 @@ struct ContentView: View {
         }
     }
     
-struct PaymentView: View {
-    @State private var showingPayPerson = false
-    @State private var username = ""
-    @Environment(\.dismiss) var dismiss
-    
-    var body: some View {
-        NavigationStack{
-            Form{
-                TextField("Enter Username", text: $username)
-                Section{
-                    Text("Michael Jackson")
-                    Text("Roy Williams")
-                }
-            }
-        }
-        .toolbar{
-            Button{
-                dismiss()
-            }
-            label: {
-                Image(systemName: "chevron.backward")
-            }
-        }
-    }
-}
 
 struct ScanView: View{
     @Environment(\.dismiss) var dismiss

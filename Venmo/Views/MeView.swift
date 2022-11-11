@@ -33,7 +33,7 @@ struct MeView: View {
                         Text("$")
                             .padding(.bottom)
                     }
-                    Text("0")
+                    Text("140")
                         .font(.system(size: 60))
                 }
                 HStack{
@@ -54,6 +54,7 @@ struct MeView: View {
                         
                     }
                     Spacer()
+                TransferView(senderImage: "ramses", sender: "You", receiver: "Roy Williams", message: "Am I making you proud?")
             }
         }
     }
