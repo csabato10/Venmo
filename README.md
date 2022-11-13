@@ -3,7 +3,7 @@
 
 ## General Description and Future Additions
 
-![](https://github.com/csabato10/Venmo/blob/main/Screen%20Recording%202022-11-12%20at%209.23.13%20PM.gif)
+![](https://github.com/csabato10/Venmo/blob/main/Screen%20Recording%202022-11-12%20at%209.23.13%20PM.gif) ![](https://github.com/csabato10/Venmo/blob/main/Screen%20Recording%202022-11-12%20at%209.24.33%20PM.gif)
 
 
 The classic money sending app Venmo is a prominent app in the lives of many people. Venmo is a convenient way to send money from your account to your friends without you needing to have the same bank.
