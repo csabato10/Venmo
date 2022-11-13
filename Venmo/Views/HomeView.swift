@@ -34,7 +34,7 @@ struct HomeView: View {
                     TransferView(senderImage: "mr. wuff", sender: "Mr. Wuff", receiver: "Dook", message: "ur lame")
                     TransferView(senderImage: "dook", sender: "Dook Devil", receiver: "Refs", message: "will this help us beat UNC?")
                     TransferView(senderImage: "deacon", sender: "Deamon Deacon", receiver: "You", message: "you bring the popcorn")
-                    TransferView(senderImage: "kevin", sender: "Kevin G", receiver: "UNC Students", message: "sorry about the lead")
+                    TransferView(senderImage: "kevin", sender: "Kevin G", receiver: "UNC Students", message: "refund for stolen scooters")
                     TransferView(senderImage: "bama", sender: "Big Al", receiver: "Mike the Tiger", message: "gummy bears")
                     TransferView(senderImage: "hokie", sender: "Hokie", receiver: "Dook Devil", message: "game ticket")
                     TransferView(senderImage: "mj", sender: "Michael Jordan", receiver: "Roy Williams", message: "concessions")

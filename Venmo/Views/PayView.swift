@@ -8,31 +8,58 @@
 import SwiftUI
 
 struct PayView: View {
-    var payee: String
+    @State var payee: String
+    @State var balance: Int = 140
+    @State var amount: Int = 0
+
     @FocusState private var amountIsFocused: Bool
-    @State var amount: Double = 0.0
     @State var messsage: String = ""
+    @Environment(\.dismiss) var dismiss
+    @State var goHome: Bool = false
+
+
     
     var body: some View {
-        VStack{
-            HStack{
-                Text(payee)
-                    .foregroundColor(Color.blue)
-                    .padding(.bottom)
-                    .padding(.leading)
-                    .padding(.top)
+        NavigationStack{
+            
+            VStack{
+                HStack{
+                    Text(payee)
+                        .foregroundColor(Color.blue)
+                        .padding(.bottom)
+                        .padding(.leading)
+                        .padding(.top)
+                    Spacer(minLength: 270)
+                    TextField("Amount", value: $amount, format: .currency(code: Locale.current.currency?.identifier ?? "USD"))
+                        .keyboardType(.decimalPad)
+                        .focused($amountIsFocused)
+                    
+                }
+                Divider()
+                HStack{
+                    TextField("Leave a message", text: $messsage)
+                }
+                .padding(.leading)
                 Spacer()
-                TextField("Amount", value: $amount, format: .currency(code: Locale.current.currency?.identifier ?? "USD"))
-                    .keyboardType(.decimalPad)
-                    .focused($amountIsFocused)
             }
-            HStack{
-                TextField("Leave a message", text: $messsage)
+            Button() {
+                balance -= amount
+                dismiss()
+            } label: {
+                Text("Transfer $\(amount).00")
+                    .frame(width: 200)
             }
-            .padding(.leading)
-            Spacer()
+            .padding()
+            .frame(width: 300)
+            .overlay(
+                RoundedRectangle(cornerRadius: 20)
+                    .stroke(.blue))
+            .toolbar{
+                Button("Cancel") {
+                    dismiss()
+                }
+            }
         }
     }
 }
-
 

@@ -10,18 +10,27 @@ import SwiftUI
 struct PaymentView: View {
     @State private var showingPayPerson = false
     @State private var username = ""
+    @State var balance: Int = 140
+
     @Environment(\.dismiss) var dismiss
     
     var body: some View {
-        VStack{
-            PaymentPerson(imageName: "mj", name: "MJ", username: "MJ23", showingPayView: false)
-            PaymentPerson(imageName: "roy", name: "Roy Williams", username: "RoyBoi", showingPayView: false)
-            PaymentPerson(imageName: "mr. wuff", name: "Mr. Wuff", username: "arfarf", showingPayView: false)
-            PaymentPerson(imageName: "deacon", name: "Demon Deacon", username: "DDeacon", showingPayView: false)
-            PaymentPerson(imageName: "kevin", name: "Kevin G", username: "KevinGus", showingPayView: false)
-            PaymentPerson(imageName: "kris", name: "Kris Jordan", username: "cpuhat", showingPayView: false)
-            PaymentPerson(imageName: "appteam", name: "App Team", username: "appteamcarolina", showingPayView: false)
-            Spacer()
+        NavigationStack{
+            VStack{
+                PaymentPerson(imageName: "mj", name: "MJ", username: "MJ23", showingPayView: false)
+                PaymentPerson(imageName: "roy", name: "Roy Williams", username: "RoyBoi", showingPayView: false)
+                PaymentPerson(imageName: "mr. wuff", name: "Mr. Wuff", username: "arfarf", showingPayView: false)
+                PaymentPerson(imageName: "deacon", name: "Demon Deacon", username: "DDeacon", showingPayView: false)
+                PaymentPerson(imageName: "kevin", name: "Kevin G", username: "KevinGus", showingPayView: false)
+                PaymentPerson(imageName: "kris", name: "Kris Jordan", username: "cpuhat", showingPayView: false)
+                PaymentPerson(imageName: "appteam", name: "App Team", username: "appteamcarolina", showingPayView: false)
+                Spacer()
+            }
+            .toolbar{
+                Button("Cancel") {
+                    dismiss()
+                }
+            }
         }
     }
 }
@@ -30,7 +39,10 @@ struct PaymentPerson: View{
     var imageName: String
     var name: String
     var username: String
+    @State var balance: Int = 0
     @State var showingPayView: Bool
+    @Environment(\.dismiss) var dismiss
+
     
     var body: some View{
         Button {

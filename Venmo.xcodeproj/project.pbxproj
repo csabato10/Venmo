@@ -21,6 +21,7 @@
 		1DC168C8291609C800C50E51 /* VenmoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DC168C7291609C800C50E51 /* VenmoTests.swift */; };
 		1DC168D2291609C800C50E51 /* VenmoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DC168D1291609C800C50E51 /* VenmoUITests.swift */; };
 		1DC168D4291609C800C50E51 /* VenmoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DC168D3291609C800C50E51 /* VenmoUITestsLaunchTests.swift */; };
+		1DDB33BB29201017007F404A /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DDB33BA29201017007F404A /* SettingsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,7 @@
 		1DC168CD291609C800C50E51 /* VenmoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VenmoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DC168D1291609C800C50E51 /* VenmoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenmoUITests.swift; sourceTree = "<group>"; };
 		1DC168D3291609C800C50E51 /* VenmoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenmoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		1DDB33BA29201017007F404A /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +97,7 @@
 				1D8EEB6C291C9030009E6DB2 /* ButtonViews.swift */,
 				1D51E6E8291DE9B4006A90D9 /* PaymentView.swift */,
 				1D51E6EA291DEA35006A90D9 /* PayView.swift */,
+				1DDB33BA29201017007F404A /* SettingsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -292,6 +295,7 @@
 				1D670A662918C0C900540A21 /* CardsView.swift in Sources */,
 				1D670A622918C0A900540A21 /* Crypto.swift in Sources */,
 				1D670A682918C13D00540A21 /* HomeView.swift in Sources */,
+				1DDB33BB29201017007F404A /* SettingsView.swift in Sources */,
 				1D51E6EB291DEA35006A90D9 /* PayView.swift in Sources */,
 				1DC168B9291609C600C50E51 /* ContentView.swift in Sources */,
 				1DC168B7291609C600C50E51 /* VenmoApp.swift in Sources */,
